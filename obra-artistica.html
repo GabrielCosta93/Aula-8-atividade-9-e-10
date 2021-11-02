@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .grande,
+    .media,
+    .pequena {
+        display: none;
+    }
+
+    div {
+        margin: 0px 1%;
+    }
+
+    @media (min-width: 680px) {
+        .corpo {
+            display: flex;
+        }
+
+        .grande {
+            display: flex;
+        }
+    }
+
+    @media (min-width: 420px) and (max-width: 679px) {
+        .media {
+            display: flex;
+        }
+
+        .img1,
+        .img2 {
+            display: inline-block;
+            width: 45%;
+
+        }
+
+        .img3 {
+
+            width: 100%;
+            display: block;
+        }
+    }
+
+    @media (max-width: 419px) {
+        .pequena {
+            display: flex;
+        }
+
+        .corpo {
+            display: block;
+        }
+    }
+</style>
+
+<header>
+    <h2 class="grande">
+        Tela grande: min 680px
+    </h2>
+
+    <h2 class="media">
+        Tela média: min.420px
+    </h2>
+
+    <h2 class="pequena">
+        Tela pequena: até 419px
+    </h2>
+</header>
+
+<body>
+    <div class="corpo">
+        <div class="img1">
+            <img src="ron-mueck-1.JPG" height="50%" width="100%">
+
+            <h3>Lorem ipsum dolor sit amet</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi vel laboriosam perferendis repudiandae. A
+                accusamus ipsam veritatis, ullam sapiente adipisci
+                fugit nisi. Minus id nisi animi quibusdam, voluptas sint cum?
+            </p>
+        </div>
+
+        <div class="img2">
+            <img src="ron-mueck-2.JPG" height="50%" width="100%">
+
+            <h3>
+                Lorem ipsum dolor sit
+            </h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Non unde nisi quos aperiam officiis perferendis
+                doloribus ea, atque libero magni delectus labore vero
+                accusamus molestias doloremque corrupti voluptate iure similique.
+            </p>
+        </div>
+
+        <div class="img3">
+            <img src="ron-mueck-3.JPG" height="50%" width="100%">
+            <h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+            </h3>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas officia ad sequi exercitationem repellat sed magnam
+                minima voluptatibus vitae, perferendis iure delectus nisi
+                quo saepe ipsa nesciunt non expedita nobis.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
